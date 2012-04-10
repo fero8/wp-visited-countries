@@ -13,13 +13,13 @@ Creates and shows your visited countries map to your visitors. Show them that yo
 WP Visited Countries is a WordPress plugin that allows you to easily create and publish a map of the countries you have visited and lived. 
 
 Features:
-* Interactive map
-* Can be easily customized via the admin panel to suit your preferences. This includes map color, width, height, and many more!
-* Can be added into a page, post, or widget
-* Visited/lived countries are highlighted with different colors that can be set by the user.
-* Each country is clickable when provided with a URL, allowing you to direct your visitors to the preferred posts in your blog/website
-* Can be translated to other languages. Full i18n-Support through gnutext mo/po files
-* Supports multisite
+*   Interactive map
+*	Can be easily customized via the admin panel to suit your preferences. This includes map color, width, height, and many more!
+*	Can be added into a page, post, or widget
+*	Visited/lived countries are highlighted with different colors that can be set by the user.
+*	Each country is clickable when provided with a URL, allowing you to direct your visitors to the preferred posts in your blog/website
+*	Can be translated to other languages. Full i18n-Support through gnutext mo/po files
+*	Supports multisite
 
 View a LIVE demo of the plugin at http://wordpress.amellie.net/demo/
 
