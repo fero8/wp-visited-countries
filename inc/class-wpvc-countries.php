@@ -341,7 +341,7 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 			if( empty( $countries ) )
 				$countries = $this->get_option();
 			
-			$file_name = 'ammap_data.xml';
+			$file_name = 'ammap_data';
 			
 			$data = '<?xml version="1.0" encoding="UTF-8"?>'. "\n\n"
 				. '<map map_file="world3.swf" zoom="100%" zoom_x="7%" zoom_y="-8%">' . "\n\t<areas>";

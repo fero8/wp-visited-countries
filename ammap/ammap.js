@@ -1,9 +1,9 @@
-function wpvc_ammap(path, width, height, bgcolor, id) {
-	path = path + 'ammap/';
-	var so = new SWFObject(path + "ammap.swf", "ammap", width, height, "8", bgcolor);
-	so.addVariable("path", path);
-	so.addVariable("data_file", escape(path + "ammap_data.xml"));
-	so.addVariable("settings_file", escape(path + "ammap_settings.xml"));
+function wpvc_ammap( s ) {
+	s.path = s.path + 'ammap/';
+	var so = new SWFObject(s.path + "ammap.swf", "ammap", s.width, s.height, "8", s.bgcolor);
+	so.addVariable("path", s.path);
+	so.addVariable("data_file", escape(s.path + "ammap_data_" + s.blogid + ".xml"));
+	so.addVariable("settings_file", escape(s.path + "ammap_settings_" + s.blogid + ".xml"));
 	so.addVariable("preloader_color", "#999999");
-	so.write(id);
+	so.write(s.id);
 }

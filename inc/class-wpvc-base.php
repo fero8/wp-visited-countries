@@ -279,7 +279,9 @@ if ( ! class_exists( 'WPVC_Base' ) ) {
 		}
 		
 		protected function write_xml( $file_name, $data ) {
-			$handle = fopen( WPVC_PATH . 'ammap/' . $file_name, 'w' ) or die( "can't open file" );
+			global $blog_id;
+			
+			$handle = fopen( WPVC_PATH . 'ammap/' . $file_name . '_' . $blog_id . '.xml', 'w' ) or die( "Problem occurs when trying to add a file" );
 			fwrite($handle, $data);
 			fclose($handle);
 		}
