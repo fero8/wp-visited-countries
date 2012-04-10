@@ -2,8 +2,8 @@
 /*
 Plugin Name: WP Visited Countries
 Plugin URI: http://wordpress.amellie.net/
-Version: 1.0.0
-Description: Shows a map of visited countries in a page
+Version: 1.1.0
+Description: Creates and shows your visited countries map to your visitors
 Author: Amalia S.
 Author URI: http://amellie.net/
 */
@@ -57,7 +57,7 @@ function wp_visited_countries_init() {
 	register_activation_hook( __FILE__,  array( 'WPVC_Master', 'activate' ) );
 	register_deactivation_hook( __FILE__,  array( 'WPVC_Master', 'deactivate' ) );
 	add_option( WPVC_VERSION_KEY, WPVC_VERSION_NUM );
-	add_filter( 'plugin_action_links', array( 'WPVC_Master', 'add_action_links' ), 10, 2 );
+	// TODO: filter deprecated? add_filter( 'plugin_action_links', array( 'WPVC_Master', 'add_action_links' ), 10, 2 );
 	add_action( 'admin_menu',  array( 'WPVC_Master', 'add_pages' ) );
 	add_shortcode( 'wp-visited-countries', array( 'WPVC_Master', 'handle_shortcode' ) );
 	// TODO: add_filter( 'the_posts', array( 'WPVC_Master', 'enqueue_scripts' ) );

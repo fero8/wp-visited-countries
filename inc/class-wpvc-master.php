@@ -137,6 +137,7 @@ class WPVC_Master {
 	 * @return string
 	 */
 	function get_script( $width, $height, $id = 'wpvc-flashcontent' ) {
+		global $blog_id;
 		
 		$option = get_option( WPVC_SETTINGS_KEY );
 		$bgcolor = $option['hex_water'];
@@ -171,8 +172,16 @@ class WPVC_Master {
 		
 		$script = '<script type="text/javascript" src="' . WPVC_URL . 'ammap/swfobject.js"></script>'
 			.'<script type="text/javascript" src="' . WPVC_URL . 'ammap/ammap.js"></script>'
-			.'<div id="' . $id . '"></div><script type="text/javascript">wpvc_ammap("' . WPVC_URL . '", "' 
-			. $width .'", "' . $height . '", "' . $bgcolor . '", "' . $id . '")</script>';
+			.'<div id="' . $id . '"></div><script type="text/javascript">
+			var wpvc = {
+				path	:	"' . WPVC_URL . '",
+				width	:	'. $width . ',
+				height	:	' . $height . ',
+				bgcolor	:	"' . $bgcolor . '",
+				id		:	"' . $id . '",
+				blogid	:	"' . $blog_id . '"
+			};
+			wpvc_ammap(wpvc)</script>';
 		
 		return $script;
 	}

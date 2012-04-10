@@ -486,7 +486,7 @@ if ( ! class_exists( 'WPVC_Settings' ) ) {
 		protected function prepare_xml( $settings = null ) {
 			$settings = $this->recheck_values( $settings );
 			
-			$file_name = 'ammap_settings.xml';
+			$file_name = 'ammap_settings';
 			$data = '<?xml version="1.0" encoding="UTF-8"?>'. "\n";
 			$data .= "
 <settings>
