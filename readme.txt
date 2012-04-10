@@ -3,7 +3,7 @@ Contributors: amellienet
 Donate link: http://wordpress.amellie.net/
 Tags: travel, traveling, travel blog, countries, visited countries, ammap, map, lived countries
 Requires at least: 3.1
-Tested up to: 3.3.0
+Tested up to: 3.3.1
 Stable tag: 1.1.1
 
 Creates and shows your visited countries map to your visitors. Show them that you've conquered the world! :)
