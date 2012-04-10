@@ -9,9 +9,9 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 	
 	class WPVC_Countries extends WPVC_Base {
 		
-		function __construct() {
+		function __construct( $activate  = false ) {
 			
-			parent::__construct( WPVC_ADD_COUNTRIES_KEY, $this->generate_defaults(), 'wpvc-countries' );
+			parent::__construct( WPVC_ADD_COUNTRIES_KEY, $this->generate_defaults(), 'wpvc-countries', 'ammap_data', $activate );
 			
 			add_action( 'admin_init', array( &$this, 'init' ) );
 		}
@@ -341,8 +341,6 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 			if( empty( $countries ) )
 				$countries = $this->get_option();
 			
-			$file_name = 'ammap_data';
-			
 			$data = '<?xml version="1.0" encoding="UTF-8"?>'. "\n\n"
 				. '<map map_file="world3.swf" zoom="100%" zoom_x="7%" zoom_y="-8%">' . "\n\t<areas>";
 			
@@ -374,7 +372,7 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 			
 			$data .= "\n\t</areas>\n</map>";
 			
-			$this->write_xml( $file_name, $data );
+			$this->write_xml( $data );
 		}
 
 		private function get_countries() {
