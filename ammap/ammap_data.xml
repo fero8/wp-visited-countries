@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map map_file="world3.swf" zoom="100%" zoom_x="7%" zoom_y="-8%">
+	<areas>
+		<area mc_name="US" title="United States" value="1" url="" color="" color_hover="" target="_blank">
+			<description>
+				<![CDATA[<br /><p><br /><p>Travelled around the East Coast in 2000</p></p>]]>
+			</description>
+		</area>
+		<area mc_name="AU" title="Australia" value="2" url="http://wordpress.org" color="#001CEB" color_hover="" target="_blank">
+			<description>
+				<![CDATA[<br /><p><br /><p>Lived here from 2004 to 2007</p></p>]]>
+			</description>
+		</area>
+	</areas>
+</map>

@@ -1,0 +1,455 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Visited Countries\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-10 12:09+0800\n"
+"PO-Revision-Date: 2012-04-10 12:09+0800\n"
+"Last-Translator: Amalia Sanusi <webmaster@amellie.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: D:\\My Documents\\www\\wordpress\\wp-content\\plugins\\wp-visited-countries\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: D:\\My Documents\\www\\wordpress\\wp-content\\plugins\\wp-visited-countries\n"
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-base.php:181
+msgid " must be an integer"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-base.php:202
+msgid " must be a hexadecimal"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-base.php:211
+msgid "Settings saved"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:49
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-countries.php:13
+msgid "Add New Country"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:137
+#, php-format
+msgid "Country %s already exists. Unable to add the same country."
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:142
+#, php-format
+msgid "Country %s has been added."
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:149
+#, php-format
+msgid "Country %s has been edited."
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:183
+msgid "Country"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:193
+msgid "Visited/Lived?"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:203
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:82
+msgid "Description"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:207
+msgid "Description is shown when a country is hovered"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:213
+msgid "Country Color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:218
+msgid "Hex color code for the country. Default color will be used if not set"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:224
+msgid "Hover Color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:229
+msgid "Hover color for the country. Default color will be used if not set"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:235
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:84
+msgid "URL"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:239
+msgid "The URL which can be accessed by clicking the country. Example: <code>wordpress.org</code> &#8212; do NOT include the <code>http://</code>"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:297
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:48
+msgid "Visited"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-countries.php:299
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:48
+msgid "Lived"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:61
+msgid "Edit"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:63
+msgid "Delete"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:80
+msgid "Title"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:81
+msgid "Visited/Lived"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-list-table.php:83
+msgid "Color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:113
+msgid "Text for countries visited"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:123
+msgid "Text for countries lived"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:133
+msgid "Text for total countries"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:143
+msgid "Map Width"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:153
+msgid "Map Height"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:163
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:167
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:228
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:305
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:369
+msgid "Background color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:168
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:179
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:190
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:201
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:212
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:233
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:244
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:255
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:266
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:278
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:289
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:310
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:321
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:332
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:363
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:374
+msgid "Default value"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:174
+msgid "Default color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:178
+msgid "Default color for countries"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:185
+msgid "Visited color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:189
+msgid "Color for countries you have visited or traveled to"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:196
+msgid "Lived color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:200
+msgid "Color for countries you have lived in"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:207
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:316
+msgid "Hover color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:211
+msgid "Color used when a country region is hovered"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:218
+msgid "Show small map?"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:232
+msgid "Background color of a small map"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:239
+msgid "Country color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:243
+msgid "Color of the countries on a small map"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:250
+msgid "Border color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:254
+msgid "Color for country's border on a small map"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:261
+msgid "Rectangle color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:265
+msgid "Color of rectangle, indicating active area on a small map"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:272
+msgid "Collapse button color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:276
+msgid "Colapse button arrow color (background color is the same as small map border color)"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:284
+msgid "Button position"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:288
+msgid "Position of the collapse button"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:295
+msgid "Show zoom control?"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:309
+msgid "Background color of \"+\", \"-\", scroller buttons and navigation arrows"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:320
+msgid "Hover color of \"+\", \"-\", scroller buttons and navigation arrows"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:327
+msgid "Outline color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:331
+msgid "Outline color of \"+\", \"-\", scroller buttons and navigation arrows"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:338
+msgid "Font size"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:348
+msgid "Font name"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:358
+msgid "Text color"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:362
+msgid "Color for the text in the description balloon"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:373
+msgid "Background color for the description balloon"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:410
+msgid "Show"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:412
+msgid "Hide"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:440
+msgid "Bottom Left"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:442
+msgid "Bottom Right"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:444
+msgid "Top Left"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-settings.php:446
+msgid "Top Right"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:17
+msgid "Show your visited countries map"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:18
+msgid "Map of Visited Countries"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:20
+msgid "Map of Countries Visited"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:47
+msgid "Title:"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:54
+msgid "Map Width:"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:61
+msgid "Map Height:"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/class-wpvc-widget.php:68
+msgid "Additional Texts:"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-countries.php:7
+msgid "Edit Country"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-countries.php:8
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-settings.php:9
+msgid "Save Changes"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-countries.php:12
+msgid "Manage Countries"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-countries.php:27
+#, php-format
+msgid "%s country deleted"
+msgid_plural "%s countries deleted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-countries.php:40
+msgid "Search Countries"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-settings.php:2
+msgid "General Settings"
+msgstr ""
+
+#: D:\My
+#: Documents\www\wordpress\wp-content\plugins\wp-visited-countries/inc/wpvc-settings.php:10
+msgid "Reset Defaults"
+msgstr ""
+
