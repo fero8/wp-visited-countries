@@ -11,25 +11,35 @@ if ( ! class_exists( 'WPVC_Base' ) ) {
 		
 		protected $option_name;
 		protected $page_name;
-		private $defaults; // default values of each field
+		protected $file_name;		// XML file name
+		private $defaults; 			// default values of each field
 		private $error;
 		private $field_titles;
 		const field_color_size = 6;
 		const field_default_size = 40;
 		
-		function __construct( $opt_name, $def, $p ) {
+		function __construct( $opt_name, $def, $p, $f, $activate = false ) {
 			
 			$this->option_name 		= $opt_name;
 			$this->defaults 		= $def;
 			$this->page_name 		= $p;
 			$this->field_titles 	= array();
+			$this->file_name 		= $this->get_file_name( $f );
 			
 			if ( ! $this->get_option() ) {
+				
 				/* Set to defaults if option does not exist */
 				update_option( $this->option_name, $this->defaults );
 				// create xml file
 				$this->prepare_xml( null );
+			
+			} else if( !file_exists( $this->file_name ) ) {
+				
+				$this->prepare_xml( null );
 			}
+			
+			if( $activate )
+				$this->handle_activation();
 		}
 		
 		protected function init() {
@@ -37,6 +47,29 @@ if ( ! class_exists( 'WPVC_Base' ) ) {
 			register_setting( $this->option_name, $this->option_name, array( &$this, 'validate' ) );
 			
 			add_action( 'admin_notices', array( &$this, 'add_validation_notice' ) );
+		}
+		
+		private function get_file_name( $name ) {
+			global $blog_id;
+			
+			return WPVC_PATH . 'ammap/' . $name . '_' . $blog_id . '.xml';
+		}
+		
+		//TODO: in the future, do more with upgrade
+		private function handle_activation() {
+			$version = get_option( WPVC_VERSION_KEY );
+			
+			if( $version !== WPVC_VERSION_NUM ) {
+				//TODO -> upgrade
+				update_option( WPVC_VERSION_KEY, WPVC_VERSION_NUM );
+			}
+			
+			//if( !function_exists( 'is_plugin_active_for_network' ) )
+				//return;
+			
+			
+			//if( !file_exists( $this->file_name ) )
+				//$this->prepare_xml( null );
 		}
 		
 		public function add_validation_notice(){
@@ -278,10 +311,11 @@ if ( ! class_exists( 'WPVC_Base' ) ) {
 			return replace_str( '#', '', $color );
 		}
 		
-		protected function write_xml( $file_name, $data ) {
-			global $blog_id;
+		protected function write_xml( $data ) {
+			if( empty( $this->file_name ) )
+				return;
 			
-			$handle = fopen( WPVC_PATH . 'ammap/' . $file_name . '_' . $blog_id . '.xml', 'w' ) or die( "Problem occurs when trying to add a file" );
+			$handle = fopen( $this->file_name, 'w' ) or die( "Problem occurs when trying to add a file" );
 			fwrite($handle, $data);
 			fclose($handle);
 		}

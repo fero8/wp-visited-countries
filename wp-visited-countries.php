@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Visited Countries
 Plugin URI: http://wordpress.amellie.net/
-Version: 1.1.0
+Version: 1.1.1
 Description: Creates and shows your visited countries map to your visitors
 Author: Amalia S.
 Author URI: http://amellie.net/
@@ -34,7 +34,7 @@ define( 'WPVC_SETTINGS_KEY', 'wpvc_settings' );
 define( 'WPVC_ADD_COUNTRIES_KEY', 'wpvc_countries' );
 define( 'WPVC_EDIT_COUNTRIES_KEY', 'wpvc_country' );
 
-define( 'WPVC_VERSION_NUM', '1.0.0' );
+define( 'WPVC_VERSION_NUM', '1.1.1' );
 define( 'WPVC_DEFAULT_MAP_WIDTH', 700 );
 define( 'WPVC_DEFAULT_MAP_HEIGHT', 400 );
 define( 'WPVC_DEFAULT_MAP_WATER', 'E0E0E0' );
@@ -52,20 +52,8 @@ if( is_admin() ) {
 require_once WPVC_PATH . 'inc/class-wpvc-widget.php';
 require_once WPVC_PATH . 'inc/class-wpvc-master.php';
 
-function wp_visited_countries_init() {
-
-	register_activation_hook( __FILE__,  array( 'WPVC_Master', 'activate' ) );
-	register_deactivation_hook( __FILE__,  array( 'WPVC_Master', 'deactivate' ) );
-	add_option( WPVC_VERSION_KEY, WPVC_VERSION_NUM );
-	// TODO: filter deprecated? add_filter( 'plugin_action_links', array( 'WPVC_Master', 'add_action_links' ), 10, 2 );
-	add_action( 'admin_menu',  array( 'WPVC_Master', 'add_pages' ) );
-	add_shortcode( 'wp-visited-countries', array( 'WPVC_Master', 'handle_shortcode' ) );
-	// TODO: add_filter( 'the_posts', array( 'WPVC_Master', 'enqueue_scripts' ) );
-	
-	//load the translated strings
-	load_plugin_textdomain( 'wpvc-plugin', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
-}
-
-add_action( 'init', 'wp_visited_countries_init');
+register_activation_hook( __FILE__,  array( 'WPVC_Master', 'activate' ) );
+register_deactivation_hook( __FILE__,  array( 'WPVC_Master', 'deactivate' ) );
+add_action( 'init', array( 'WPVC_Master', 'init' ) );
 add_action( 'widgets_init', array( 'WPVC_Map_Widget', 'load_widget' ) );
 ?>

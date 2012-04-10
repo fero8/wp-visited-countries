@@ -14,8 +14,8 @@ class WPVC_Master {
 	 * @access public
 	 */
 	function activate() {
-		new WPVC_Settings();
-		new WPVC_Countries();
+		new WPVC_Settings( true );
+		new WPVC_Countries( true );
 	}
 
 	/**
@@ -28,6 +28,18 @@ class WPVC_Master {
 		delete_option( WPVC_SETTINGS_KEY );	
 		delete_option( WPVC_ADD_COUNTRIES_KEY );	
 		unregister_widget( 'WPVC_Map_Widget' );					
+	}
+	
+	function init() {
+		add_option( WPVC_VERSION_KEY, WPVC_VERSION_NUM );
+		// TODO: filter deprecated?
+		//add_filter( 'plugin_action_links', array( 'WPVC_Master', 'add_action_links' ), 10, 2 );
+		add_action( 'admin_menu',  array( 'WPVC_Master', 'add_pages' ) );
+		add_shortcode( 'wp-visited-countries', array( 'WPVC_Master', 'handle_shortcode' ) );
+		// TODO: add_filter( 'the_posts', array( 'WPVC_Master', 'enqueue_scripts' ) );
+		
+		//load the translated strings
+		load_plugin_textdomain( 'wpvc-plugin', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 	}		
 	
 	/**

@@ -9,11 +9,12 @@ if ( ! class_exists( 'WPVC_Settings' ) ) {
 	
 	class WPVC_Settings extends WPVC_Base {
 		
-		function __construct() {
+		function __construct( $activate  = false ) {
 			
-			parent::__construct( WPVC_SETTINGS_KEY, $this->generate_defaults(), 'wpvc-settings' );
+			parent::__construct( WPVC_SETTINGS_KEY, $this->generate_defaults(), 'wpvc-settings', 'ammap_settings', $activate );
 			
 			add_action( 'admin_init', array( &$this, 'init' ) );
+			
 		}
 		
 		private function generate_defaults() {
@@ -486,7 +487,6 @@ if ( ! class_exists( 'WPVC_Settings' ) ) {
 		protected function prepare_xml( $settings = null ) {
 			$settings = $this->recheck_values( $settings );
 			
-			$file_name = 'ammap_settings';
 			$data = '<?xml version="1.0" encoding="UTF-8"?>'. "\n";
 			$data .= "
 <settings>
@@ -550,7 +550,7 @@ if ( ! class_exists( 'WPVC_Settings' ) ) {
 </settings>
 ";
 		
-			$this->write_xml( $file_name, $data );
+			$this->write_xml( $data );
 		}
 	}
 
