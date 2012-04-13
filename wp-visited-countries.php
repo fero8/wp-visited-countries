@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Visited Countries
 Plugin URI: http://wordpress.amellie.net/
-Version: 1.1.1
+Version: 1.1.2
 Description: Creates and shows your visited countries map to your visitors
 Author: Amalia S.
 Author URI: http://amellie.net/
@@ -34,7 +34,7 @@ define( 'WPVC_SETTINGS_KEY', 'wpvc_settings' );
 define( 'WPVC_ADD_COUNTRIES_KEY', 'wpvc_countries' );
 define( 'WPVC_EDIT_COUNTRIES_KEY', 'wpvc_country' );
 
-define( 'WPVC_VERSION_NUM', '1.1.1' );
+define( 'WPVC_VERSION_NUM', '1.1.2' );
 define( 'WPVC_DEFAULT_MAP_WIDTH', 700 );
 define( 'WPVC_DEFAULT_MAP_HEIGHT', 400 );
 define( 'WPVC_DEFAULT_MAP_WATER', 'E0E0E0' );
