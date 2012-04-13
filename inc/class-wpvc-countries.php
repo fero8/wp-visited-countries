@@ -11,7 +11,7 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 		
 		function __construct( $activate  = false ) {
 			
-			parent::__construct( WPVC_ADD_COUNTRIES_KEY, $this->generate_defaults(), 'wpvc-countries', 'ammap_data', $activate );
+			parent::__construct( WPVC_ADD_COUNTRIES_KEY, array(), 'wpvc-countries', 'ammap_data', $activate );
 			
 			add_action( 'admin_init', array( &$this, 'init' ) );
 		}
@@ -52,6 +52,9 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 			//section for editing a country
 			add_settings_section( $this->option_name.'_edit', '', 
 					array( &$this, 'print_content_edit' ), WPVC_EDIT_COUNTRIES_KEY );
+			
+			if( $this->is_delete() )
+				update_option( WPVC_ADD_COUNTRIES_KEY, $this->get_option() );
 		}
 		
 		public function print_content_add() {
@@ -72,6 +75,10 @@ if ( ! class_exists( 'WPVC_Countries' ) && is_admin() ) {
 		public function print_content_section( $val ) {
 			echo '<input type="hidden" name="wpvc_section" value="' . $val . '" />';
 			echo wp_nonce_field( $this->option_name.'_'.$val, $this->option_name.'_nonce' );
+		}
+		
+		function is_delete() {
+			return ( isset( $_REQUEST['country'] ) && ( $_REQUEST['action'] === 'delete' || $_REQUEST['action2'] == 'delete' ) );
 		}
 		
 		/**

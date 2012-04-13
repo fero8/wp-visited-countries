@@ -1,10 +1,10 @@
-=== Plugin Name ===
+=== WP Visited Countries ===
 Contributors: amellienet
 Donate link: http://wordpress.amellie.net/
 Tags: travel, traveling, travel blog, countries, visited countries, ammap, map, lived countries
 Requires at least: 3.1
 Tested up to: 3.3.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 
 Creates and shows your visited countries map to your visitors. Show them that you've conquered the world! :)
 
@@ -55,3 +55,7 @@ Please visit the [Plugin's FAQ](http://wordpress.amellie.net/faq/)
 
 = 1.1.1 =
 * Fix some bugs
+
+= 1.1.2 =
+* Fix bugs when deleting
+* Update ammap
